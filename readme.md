@@ -1,8 +1,8 @@
-![Clueboard Layout Image](http://i.imgur.com/7Capi8W.png)
+# Custom Keymaps For Clueboard (and default)
+For use with [QMK firmware](https://docs.qmk.fm). Also where default clueboard layout in this repo comes from.
 
-# Default Clueboard Layout
-
-This is the default layout that comes flashed on every Clueboard. For the most
-part it's a straightforward and easy to follow layout. The only unusual key is 
-the key in the upper left, which sends Escape normally, but Grave when any of
-the Ctrl, Alt, or GUI modifiers are held down.
+## Make & Flash
+1. Enter programming mode: Fn + S + R
+2. Confirm programming mode: `lsusb` (Linux) or `system_profiler SPUSBDataType` (Mac) 
+3. `cd ~/.../qmk_firmware`
+4. `make clueboard/66/rev3:gaberson:dfu`
